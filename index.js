@@ -37,9 +37,5 @@ function unleashDog(dogName, dogBreed) {
 let routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog]
 
 function exerciseDog(dogName, dogBreed) {
-    let answer = []
-    for (let i = 0; i < routine.length; i++) {
-        answer.push(routine[i](dogName, dogBreed))
-    }
-    return answer
+    return routine.map(action => action(dogName, dogBreed))
 }
