@@ -41,16 +41,28 @@ function unleashDog(dogName = "Byron", dogBreed = "poodle") {
 // Next, create our "Array o' Functions!" Create a variable called routine. This variable will be an Array all of the functions we've just defined.
 let routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog];
 
-function exerciseDog(dogName, dogBreed) {
-  let result = [];
-
-  routine.forEach(m => result.push(m(dogName, dogBreed)));
-
-  return result;
-}
-
 // Iterate over the routine Array
 // Call each function in the array and
 // pass the dogName and dogBreed received by exerciseDog() to the function as they are called
 // capture the result of each function's call
 // return an Array of all those functions' return values
+
+function exerciseDog(dogName, dogBreed) {
+  // let result = [];
+
+  // routine.forEach(m => result.push(m(dogName, dogBreed)));
+
+  // routine.forEach( function(m) { 
+  //   result.push(m(dogName, dogBreed)); 
+  // } )
+
+  // return routine.map(m => m(dogName, dogBreed));
+
+  return routine.map(function(m) {
+    return m(dogName, dogBreed);
+  })
+
+  // const map1 = array1.map(x => x * 2);
+
+  // return result;
+}
