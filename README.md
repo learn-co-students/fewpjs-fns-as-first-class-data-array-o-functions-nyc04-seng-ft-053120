@@ -45,6 +45,7 @@ for `Byron the poodle`. Let's _generalize_ now and make each function take a
 ```js
 function wakeDog(dogName, dogBreed) {
   console.log(`Wake ${dogName} the ${dogBreed}`);
+  return `Wake ${dogName} the ${dogBreed}`
 }
 ...
 ```
