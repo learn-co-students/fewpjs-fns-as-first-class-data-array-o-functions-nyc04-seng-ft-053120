@@ -43,13 +43,3 @@ function exerciseDog(dogName, dogBreed) { //setting function exerciseDog to take
 
 
 
-//example from MDN -- how to use .map in JS
-//const array1 = [1, 4, 9, 16];
-// pass a function to map
-//const map1 = array1.map(x => x * 2);
-//console.log(map1);
-// expected output: Array [2, 8, 18, 32]
-
-//let new_array = arr.map(function callback( currentValue[, index[, array]]) {
-    // return element for new_array
-//}[, thisArg])
